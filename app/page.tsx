@@ -1,8 +1,6 @@
 'use client';
 
 import { useChat } from 'ai/react';
-import Head from 'next/head';
-import { useEffect } from 'react';
 import { GrLinkedinOption } from "react-icons/gr";
 import { GrInstagram } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
