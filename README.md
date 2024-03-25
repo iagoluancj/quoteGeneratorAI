@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gerador de Citações com Next.js, Tailwind e Langchain
 
-## Getting Started
+<h2 align="center"><a href="#" target="_blank">Visualizar Gerador de Citações</a></h2>
 
-First, run the development server:
+![quoteGenerator](https://github.com/iagoluancj/quoteGeneratorAI/assets/86308522/cd85424b-5a12-46dc-a756-c3fcbfe5aaf0)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Gerador rápido de citações
+Experimente criar citações de forma rápida e simples com nosso gerador de citações.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Mais informações:
+#### Descrição do Projeto
+O Gerador de Citações é um projeto simples desenvolvido com Next.js, Tailwind e Langcha. Este projeto foi concebido como uma forma de aprender os conceitos básicos dessas tecnologias.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![gerador-de-citacoes2](link_para_sua_imagem)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Funcionalidades Implementadas:
+- Interface minimalista e intuitiva para facilitar a criação de citações;
+- Utilização do Tailwind para estilização rápida e eficiente da interface;
+- Integração com Langchain para geração de texto aleatório e personalizado;
+- Implementação em Next.js para aproveitar os benefícios de SSR;
 
-## Learn More
+#### Detalhes Técnicos:
+- Utilização do Langchain para gerar conteúdo de texto dinâmico e personalizado;
+- Estilização rápida e responsiva com Tailwind para garantir uma experiência consistente em diferentes dispositivos;
+- Desenvolvimento focado no aprendizado das tecnologias envolvidas, proporcionando uma base sólida para projetos futuros.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto foi criado com o intuito de explorar e aprender as tecnologias envolvidas.
