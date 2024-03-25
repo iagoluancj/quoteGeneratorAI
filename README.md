@@ -11,8 +11,6 @@ Experimente criar citações de forma rápida e simples com nosso gerador de cit
 #### Descrição do Projeto
 O Gerador de Citações é um projeto simples desenvolvido com Next.js, Tailwind e Langcha. Este projeto foi concebido como uma forma de aprender os conceitos básicos dessas tecnologias.
 
-![gerador-de-citacoes2](link_para_sua_imagem)
-
 ### Funcionalidades Implementadas:
 - Interface minimalista e intuitiva para facilitar a criação de citações;
 - Utilização do Tailwind para estilização rápida e eficiente da interface;
