@@ -11,7 +11,11 @@ export default function Chat() {
   const { messages, handleInputChange, handleSubmit } = useChat();
 
   const createNewCitation = () => {
-    const event = { target: { value: 'Crie uma citação falsa de um autor falso (observação: não diga que o autor é falso, siga modelo comum de citação: "frase - autor", o autor deve conter um nome coerente (Evite nomes com substantivos utilizados na frase gerada))' } };
+    const event = {
+      target: {
+        value: 'Crie uma citação falsa de um autor falso (observação: não diga que o autor é falso, siga modelo comum de citação: "frase - autor", o autor deve conter um nome coerente (Evite nomes com substantivos utilizados na frase gerada))'
+      }
+    } as React.ChangeEvent<HTMLTextAreaElement>;
     handleInputChange(event);
   }
 
