@@ -43,7 +43,7 @@ export default function Chat() {
             </div>
           ) : (
             <div className="whitespace-pre-wrap text-violet-700 px-4 py-5">
-              <span>Crie citações únicas e exclusivas geradas a partir da integração API Vercel com LangChain, prossiga pelo botão abaixo - Iago Jesus</span>
+              <span>Crie citações únicas e exclusivas geradas a partir da integração com a API LangChain via SDK Vercel, prossiga pelo botão abaixo - Iago Jesus</span>
             </div>
           )}
           <div className='flex gap-3 justify-evenly py-3 text-violet-500'>
