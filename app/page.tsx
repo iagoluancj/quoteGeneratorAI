@@ -1,14 +1,24 @@
 'use client';
 
 import { useChat } from 'ai/react';
+import { useState } from 'react';
 import { GrLinkedinOption } from "react-icons/gr";
 import { GrInstagram } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
 
 export default function Chat() {
   const { messages, handleInputChange, handleSubmit } = useChat();
+  const [disabledButton, setDisabledButton] = useState(false)
 
   const createNewCitation = () => {
+    setTimeout(() => {
+      setDisabledButton(true);
+    }, 1);
+
+    setTimeout(() => {
+      setDisabledButton(false);
+    }, 3000);
+
     const event = {
       target: {
         value: 'Crie uma citação falsa de um autor falso (observação: não diga que o autor é falso, siga modelo comum de citação: "frase - autor", o autor deve conter um nome coerente (Evite nomes com substantivos utilizados na frase gerada))'
@@ -42,19 +52,31 @@ export default function Chat() {
             <div><a href="https://github.com/iagoluancj" target='_blank' aria-label='Icone Github'><GrGithub size={24} /></a></div>
           </div>
         </div>
-        <span className='pt-1 text-violet-200'>
+        <span className='text-violet-200'>
           Developed by <a href="https://iagoluancj.github.io/Portifolio-React/" target='_blank' className='underline'>Iago Jesus</a>
         </span>
         <form
           className="mt-10 px-3"
           onSubmit={handleSubmit}>
           <button
-            className="w-full
-          bg-violet-50 border
-          border-violet-300 
-          rounded-md shadow-xl py-2 text-violet-700 
-          hover:bg-violet-400 hover:text-white md:hover:bg-violet-50 md:hover:text-violet-700 md:active:bg-violet-400 md:active:text-white ease-in-out duration-200"
+            className={`w-full 
+                    bg-violet-50 
+                    border 
+                    border-violet-300 
+                    rounded-md 
+                    shadow-xl 
+                    py-2 
+                    text-violet-700 
+                    hover:bg-violet-400 
+                    hover:text-white 
+                    md:hover:bg-violet-50 
+                    md:hover:text-violet-700 
+                    md:active:bg-violet-400 
+                    md:active:text-white ease-in-out duration-200
+                    ${disabledButton === true ? 'hover:bg-violet-50 hover:text-violet-600 opacity-50 cursor-not-allowed' : ''}                    
+                    `}
             onClick={createNewCitation}
+            disabled={disabledButton}
           >
             Criar nova citação
           </button>
