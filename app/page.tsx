@@ -73,7 +73,7 @@ export default function Chat() {
                     md:hover:text-violet-700 
                     md:active:bg-violet-400 
                     md:active:text-white ease-in-out duration-200
-                    ${disabledButton === true ? 'hover:bg-violet-50 hover:text-violet-600 opacity-50 cursor-not-allowed' : ''}                    
+                    ${disabledButton === true ? 'bg-violet-50 text-violet-700 hover:bg-violet-50 hover:text-violet-700 opacity-50 cursor-not-allowed' : ''}                    
                     `}
             onClick={createNewCitation}
             disabled={disabledButton}
