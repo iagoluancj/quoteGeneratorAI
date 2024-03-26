@@ -2,14 +2,15 @@
 
 import { useChat } from 'ai/react';
 import { useState } from 'react';
-import { DiVim } from 'react-icons/di';
 import { GrLinkedinOption } from "react-icons/gr";
 import { GrInstagram } from "react-icons/gr";
+import { GrShareOption } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
 
 export default function Chat() {
   const { messages, handleInputChange, handleSubmit } = useChat();
   const [disabledButton, setDisabledButton] = useState(false)
+  const [showCopiedPopup, setShowCopiedPopup] = useState(false);
 
   const createNewCitation = () => {
     setTimeout(() => {
@@ -26,6 +27,22 @@ export default function Chat() {
       }
     } as React.ChangeEvent<HTMLTextAreaElement>;
     handleInputChange(event);
+  }
+
+  const copyLink = () => {
+    var dummy = document.createElement("input");
+    var text = "https://quote-generator-ai.vercel.app/";
+
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+
+    setShowCopiedPopup(true);
+    setTimeout(() => {
+      setShowCopiedPopup(false);
+    }, 1000);
   }
 
   const lastAssistantMessage = messages
@@ -51,6 +68,14 @@ export default function Chat() {
             <div><a href="https://www.linkedin.com/in/iago-luan-4b4b02220/" target='_blank' aria-label='Icone Linkedin'><GrLinkedinOption size={24} /> </a></div>
             <div><a href="https://www.instagram.com/iago.luancj/" target='_blank' aria-label='Icone Instagram'><GrInstagram size={24} /></a></div>
             <div><a href="https://github.com/iagoluancj" target='_blank' aria-label='Icone Github'><GrGithub size={24} /></a></div>
+            <div><a href="#" onClick={copyLink}> <GrShareOption size={22} /> </a></div>
+            {showCopiedPopup === true ?
+              <div className="bg-white border border-gray-300 p-1 rounded shadow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 fixed">
+                <span>Link copiado</span>
+              </div>
+              :
+              ''
+            }
           </div>
         </div>
         <span className='text-violet-200'>
