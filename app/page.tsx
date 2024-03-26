@@ -2,6 +2,7 @@
 
 import { useChat } from 'ai/react';
 import { useState } from 'react';
+import { DiVim } from 'react-icons/di';
 import { GrLinkedinOption } from "react-icons/gr";
 import { GrInstagram } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
@@ -78,7 +79,7 @@ export default function Chat() {
             onClick={createNewCitation}
             disabled={disabledButton}
           >
-            Criar nova citação
+            {disabledButton === true ? <span>Aguarde...</span> : <span>Criar nova citação</span>}
           </button>
         </form>
       </div>
