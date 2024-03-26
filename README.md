@@ -1,6 +1,6 @@
 # Gerador de Citações com Next.js, Tailwind e Langchain
 
-<h2 align="center"><a href="#" target="_blank">Visualizar Gerador de Citações</a></h2>
+<h2 align="center"><a href="https://quote-generator-ai.vercel.app/" target="_blank">Visualizar Gerador de Citações</a></h2>
 
 ![quoteGenerator](https://github.com/iagoluancj/quoteGeneratorAI/assets/86308522/cd85424b-5a12-46dc-a756-c3fcbfe5aaf0)
 
