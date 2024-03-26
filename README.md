@@ -2,7 +2,7 @@
 
 <h2 align="center"><a href="https://quote-generator-ai.vercel.app/" target="_blank">Visualizar Gerador de Citações</a></h2>
 
-![quoteGenerator](https://github.com/iagoluancj/quoteGeneratorAI/assets/86308522/cd85424b-5a12-46dc-a756-c3fcbfe5aaf0)
+![quote1](https://github.com/iagoluancj/quoteGeneratorAI/assets/86308522/95485a0e-becb-4dfd-8359-27c62872def3)
 
 ## Gerador rápido de citações
 Experimente criar citações de forma rápida e simples com nosso gerador de citações.
